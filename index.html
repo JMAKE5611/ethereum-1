@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethereum</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/ico" href="./favicon.png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="header-content">
+            <div class="header-img">
+              <a href="#">
+                <img src="./assets/images/logo.svg" alt="SpaceX" />
+              </a>
+            </div>
+            <nav class="header-nav">
+              <ul class="navbar">
+                <li><a class="navbar-item" href="#">Giveaway</a></li>
+                <li><a class="navbar-item" href="#rules">Rules</a></li>
+                <li><a class="navbar-item" href="#rules">Bonus</a></li>
+                <li><a class="navbar-item" href="#faq">FAQ</a></li>
+                <li>
+                  <a class="navbar-item" href="#transactions">Transactions</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-buttons">
+              <button class="join__button">
+                <a href="#">
+                  Participate
+                  <svg class="icon">
+                    <use
+                      xlink:href="./assets/images/icons.svg#button_arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="main-content">
+            <div class="main-text">
+              <h1>
+                Hurry up and <um>take part</um>&nbsp;in&nbsp;the&nbsp;giveaway
+                of
+                <um>50&nbsp;000&nbsp;ETH</um>
+              </h1>
+              <h3>
+                During this unique event we will give you a chance to win 50 000
+                ETH, have a look at the rules and don't miss on your chance!
+              </h3>
+              <div class="header-buttons">
+                <button class="join__button">
+                  <a href="#">
+                    Participate
+                    <svg class="icon">
+                      <use
+                        xlink:href="./assets/images/icons.svg#button_arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rules" id="rules">
+      <div class="container">
+        <div class="row">
+          <div class="rules-content">
+            <div class="rules-blocks">
+              <div class="about-block">
+                <div class="a-block_content">
+                  <h2>About</h2>
+                  <br />
+                  <p>
+                    During this unique event we will give you a chance to win
+                    <um>50 000 ETH</um>, have a look at the rules and don't miss
+                    on your chance! You can only participate once!
+                  </p>
+                </div>
+              </div>
+              <div class="rule-block">
+                <div class="r-block_content">
+                  <h2>Rules</h2>
+                  <br />
+                  <p>
+                    To participate you just need to send from
+                    <um>0.1 ETH</um> to <um>10 ETH</um> to the contribution
+                    address and we will immediately send you back
+                    <um>0.2 ETH</um> to <um>20 ETH</um> (x2 back) to the address
+                    you sent it from.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bonus-blocks">
+              <div class="b-block_content">
+                <h2>For example:</h2>
+                <br />
+                <ul>
+                  <li>
+                    If you send <um>0.1 ETH</um>, you will be get
+                    <um>0.2 ETH</um> back.
+                  </li>
+                  <li>
+                    If you send <um>0.5 ETH</um>, you will be get
+                    <um>1 ETH</um> back.
+                  </li>
+                  <li>
+                    If you send <um>1 ETH</um>, you will be get
+                    <um>2 ETH</um> back.
+                  </li>
+                  <li>
+                    If you send <um>2 ETH</um>, you will be get
+                    <um>4 ETH</um> back.
+                  </li>
+                  <li>
+                    If you send <um>5 ETH</um>, you will be get
+                    <um>10 ETH</um> back.
+                  </li>
+                </ul>
+                <br /><br />
+                <h2>Special Bonus:</h2>
+                <br />
+                <ul>
+                  <li><um>1 ETH</um> = <um>0.5 ETH BONUS</um></li>
+                  <li><um>2 ETH</um> = <um>1 ETH BONUS</um></li>
+                  <li><um>5 ETH</um> = <um>2 ETH BONUS</um></li>
+                  <li><um>7 ETH</um> = <um>3 ETH BONUS</um></li>
+                  <li><um>10 ETH</um> = <um>5 ETH BONUS</um></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="payment">
+      <div class="container">
+        <div class="row">
+          <div class="payment-content">
+            <div class="payment-block">
+              <div class="payment-block-content">
+                <div class="p-block_head">
+                  <div class="p-block_text">
+                    <div class="p-block_text__head">
+                      <h2>Payment Address</h2>
+                      <p>You can send ETH to the following address:</p>
+                    </div>
+                    <div class="address-input">
+                      <input
+                        id="address_1"
+                        type="text"
+                        readonly=""
+                        value="bc1q3kl8wc4nunp87ayptmu0e5fhw0cg2rcc9m8znr"
+                      />
+                      <div class="d-flex">
+                        <button
+                          class="button-copy"
+                          data-clipboard-target="#address_1"
+                          onclick="viewDiv1()"
+                        >
+                          <p>Copy Address to Clipboard</p>
+                          <svg class="copy-icon">
+                            <use
+                              xlink:href="./assets/images/icons.svg#copy"
+                            ></use>
+                          </svg>
+                        </button>
+                        <div
+                          id="copy_message1"
+                          class="copy_message"
+                          style="opacity: 0"
+                        >
+                          Copied!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-block_img">
+                    <img src="./assets/images/qr.png" alt="" />
+                  </div>
+                </div>
+                <hr />
+                <div class="waiting">
+                  <img
+                    class="circle_w"
+                    src="./assets/images/waiting.svg"
+                    alt=""
+                  />
+                  <p>Waiting for payment</p>
+                </div>
+              </div>
+            </div>
+            <div class="circle-block">
+              <div class="circle-block-content">
+                <svg viewBox="0 0 42 42" class="donut">
+                  <circle
+                    class="donut-ring"
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#EDEEF3"
+                    stroke-width="3"
+                  ></circle>
+                  <circle
+                    class="donut-segment"
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#3861FB"
+                    stroke-width="3"
+                    stroke-dasharray="75 25"
+                    stroke-dashoffset="-25"
+                    id="percent-circle-id"
+                  ></circle>
+                </svg>
+                <p
+                  class="circle-money__sum progress-bar-value"
+                  id="progress-ico-bar"
+                >
+                  37 500 / 50 000
+                </p>
+                <p class="circle-money__chanse">
+                  Last chance
+                  <br />
+                  to get your ETH!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="faq-content">
+            <div class="faq-head">
+              <h1>FAQ</h1>
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button id="accordion-button" aria-expanded="false">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        What do I have to do to participate in the giveaway?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="./assets/images/faq-arrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      You get your x2 bonus instantly! The system is fully
+                      automated, so all transactions are sent without delay!
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button" aria-expanded="false">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        How long will it take me to get my bonus?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="./assets/images/faq-arrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      You get your x2 bonus instantly! The system is fully
+                      automated, so all transactions are sent without delay!
+                      <br /><br />
+                      You get your x2 bonus instantly! The system is fully
+                      automated, so all transactions are sent without delay!
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button" aria-expanded="false">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        Who is the sponsor of this giveaway?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="./assets/images/faq-arrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      You get your x2 bonus instantly! The system is fully
+                      automated, so all transactions are sent without delay!
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button" aria-expanded="false">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        How many times can I participate in the giveaway?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="./assets/images/faq-arrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      You get your x2 bonus instantly! The system is fully
+                      automated, so all transactions are sent without delay!
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button" aria-expanded="false">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        How do I get my bonus?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="./assets/images/faq-arrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      You get your x2 bonus instantly! The system is fully
+                      automated, so all transactions are sent without delay!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="transactions" id="transactions">
+      <div class="container">
+        <div class="row">
+          <div class="transactions-content">
+            <div class="transactions-title">
+              <h1>Transactions for Address</h1>
+              <h3>bc1q3kl8wc4nunp67ayptmu0e5fhw0cg2rcc9m8znr</h3>
+            </div>
+            <div class="transactions-table">
+              <div class="t-table-title">
+                <div>TxHash</div>
+                <div>Block</div>
+                <div>From</div>
+                <div></div>
+                <div>To</div>
+                <div>Age</div>
+                <div>Value</div>
+                <div>TxFee</div>
+              </div>
+              <div class="transaction-table__list">
+                <div class="inner trans-action">
+                  <div class="top">
+                    <div class="rows row-trans-out">
+                      <div class="hash col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        1AIeemrU...
+                      </div>
+                      <div
+                        class="block-num col-lg-1 col-md-1 col-sm-1 col-xs-1"
+                      >
+                        65040580
+                      </div>
+                      <div
+                        class="bitwal-sec col-lg-2 col-md-2 col-sm-2 col-xs-2"
+                      >
+                        rHiHAqGpWBLbnDWP5EwJjZwLGV7XAbRsH5...
+                      </div>
+                      <div
+                        class="out-trans col-lg-1 col-md-1 col-sm-2 col-xs-2"
+                      >
+                        OUT
+                      </div>
+                      <div class="bitwal col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        r1IXAjRW...
+                      </div>
+                      <div class="age col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        45 sec
+                      </div>
+                      <div class="value col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        1.5 ETH
+                      </div>
+                      <div class="tx-fee col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        0.00238
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="rows row-trans-in">
+                      <div class="hash col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        1xiMGTbA..
+                      </div>
+                      <div
+                        class="block-num col-lg-1 col-md-1 col-sm-1 col-xs-1"
+                      >
+                        65040580
+                      </div>
+                      <div class="bitwal col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        r1IXAjRW...
+                      </div>
+                      <div class="in-trans col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        IN
+                      </div>
+                      <div
+                        class="bitwal-sec col-lg-2 col-md-2 col-sm-2 col-xs-2"
+                      >
+                        rHiHAqGpWBLbnDWP5EwJjZwLGV7XAbRsH5...
+                      </div>
+                      <div class="age col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        45 sec
+                      </div>
+                      <div class="value col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        3 ETH
+                      </div>
+                      <div class="tx-fee col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                        0.00426
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner trans-action">
+                  <div class="top">
+                    <div class="rows row-trans-out">
+                      <div class="hash col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        1PMNwNhf...
+                      </div>
+                      <div
+                        class="block-num col-lg-1 col-md-1 col-sm-1 col-xs-1"
+                      >
+                        616135
+                      </div>
+                      <div
+                        class="bitwal-sec col-lg-2 col-md-2 col-sm-2 col-xs-2"
+                      >
+                        gyhsdjashdASDhasdasdhAsdjh7bc1q3kl...
+                      </div>
+                      <div
+                        class="out-trans col-lg-1 col-md-1 col-sm-2 col-xs-2"
+                      >
+                        OUT
+                      </div>
+                      <div class="bitwal col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        1Sshdck...
+                      </div>
+                      <div class="age col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        2 min
+                      </div>
+                      <div class="value col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        4.0 ETH
+                      </div>
+                      <div class="tx-fee col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        0.00163
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="rows row-trans-in">
+                      <div class="hash col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        1esuyxUJ...
+                      </div>
+                      <div
+                        class="block-num col-lg-1 col-md-1 col-sm-1 col-xs-1"
+                      >
+                        616114
+                      </div>
+                      <div class="bitwal col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        1Sshdck...
+                      </div>
+                      <div class="in-trans col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        IN
+                      </div>
+                      <div
+                        class="bitwal-sec col-lg-2 col-md-2 col-sm-2 col-xs-2"
+                      >
+                        jas7d@hjsd782husd8ahASDuihd1ETHvqU...
+                      </div>
+                      <div class="age col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        2 min
+                      </div>
+                      <div class="value col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        8.0 ETH
+                      </div>
+                      <div class="tx-fee col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                        0.00163
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main_support">
+      <div id="chat_cont">
+        <div class="chat_cont_title">
+          <div class="support_info">
+            <img src="./assets/images/consultant.png" alt="" />
+            <div class="support_name">
+              <h4>Mike Capello</h4>
+              <h5>Giveaway Support</h5>
+            </div>
+          </div>
+          <div class="chat_close">
+            <button id="hider-2">
+              <img src="./assets/images/close_chat.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="chat_cont_chat">
+          <div class="chat_adm_message chat_message">
+            <div class="message_block">
+              <div class="message_text">
+                С другой стороны рамки и место обучения кадров требуют от нас
+                анализа направлений.
+              </div>
+            </div>
+            <div class="message_time">16:20</div>
+          </div>
+          <div class="chat_user_message chat_message">
+            <div class="message_block">
+              <div class="message_text">
+                С другой стороны рамки и место обучения кадров требуют от нас
+                анализа направлений.
+              </div>
+            </div>
+            <div class="message_time">16:20</div>
+          </div>
+          <div class="chat_adm_message chat_message">
+            <div class="message_block">
+              <div class="message_text">
+                С другой стороны рамки и место обучения кадров требуют от нас
+                анализа направлений.
+              </div>
+            </div>
+            <div class="message_time">16:20</div>
+          </div>
+          <div class="chat_user_message chat_message">
+            <div class="message_block">
+              <div class="message_text">
+                С другой стороны рамки и место обучения кадров требуют от нас
+                анализа направлений.
+              </div>
+            </div>
+            <div class="message_time">16:20</div>
+          </div>
+          <div class="chat_adm_message chat_message">
+            <div class="message_block">
+              <div class="message_text">
+                С другой стороны рамки и место обучения кадров требуют от нас
+                анализа направлений.
+              </div>
+            </div>
+            <div class="message_time">16:20</div>
+          </div>
+          <div class="chat_user_message chat_message">
+            <div class="message_block">
+              <div class="message_text">
+                С другой стороны рамки и место обучения кадров требуют от нас
+                анализа направлений.
+              </div>
+            </div>
+            <div class="message_time">16:20</div>
+          </div>
+        </div>
+        <form action="#send-sms" class="chat_cont_footer">
+          <div class="chat_input">
+            <input
+              type="search"
+              placeholder="Enter your message..."
+              name="u_ms"
+              id="sms_input"
+            />
+          </div>
+          <div class="chat_enter">
+            <button class="chat_enter__button" type="reset" onclick="">
+              <img src="./assets/images/chat_arrow.svg" alt="" />
+            </button>
+          </div>
+        </form>
+      </div>
+      <button id="hider">
+        <img src="./assets/images/chat.svg" alt="" />
+      </button>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="header-content">
+            <div class="header-img">
+              <a href="#">
+                <img src="./assets/images/logo.svg" alt="SpaceX" />
+              </a>
+            </div>
+            <nav class="header-nav">
+              <ul class="navbar">
+                <li><a class="navbar-item" href="#">Giveaway</a></li>
+                <li><a class="navbar-item" href="#rules">Rules</a></li>
+                <li><a class="navbar-item" href="#rules">Bonus</a></li>
+                <li><a class="navbar-item" href="#faq">FAQ</a></li>
+                <li>
+                  <a class="navbar-item" href="#transactions">Transactions</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-buttons">
+              <button class="join__button">
+                <a href="#">
+                  Participate
+                  <svg class="icon">
+                    <use
+                      xlink:href="./assets/images/icons.svg#button_arrow"
+                    ></use>
+                  </svg>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    ></script>
+    <script src="./assets/js/updater.js"></script>
+    <script src="./assets/js/clipboard.min.js"></script>
+    <script>
+      new ClipboardJS(".button-copy");
+    </script>
+    <script>
+      function viewDiv1() {
+        document.getElementById("copy_message1").style.opacity = "0";
+        setTimeout(() => {
+          document.getElementById("copy_message1").style.opacity = "0";
+        }, 1000);
+        document.getElementById("copy_message1").style.opacity = "1";
+      }
+    </script>
+    <!-- <script type="text/javascript">
+      var delay_popup = 500;
+      setTimeout(
+        "document.getElementById('overlay').style.display='block'",
+        delay_popup
+      );
+      function changeImage(src) {
+        const ether = document.querySelectorAll(".change_wallet");
+        for (var i = 0, cnt = ether.length; i < cnt; i++) {
+          ether[i].src = src;
+        }
+      }
+    </script> -->
+    <!-- <script>
+      var valute = "BTC";
+      function nuck_figgers() {
+        let bruh = document.body.innerHTML;
+        let bruh_2 = bruh.indexOf("Participate");
+        let moment = bruh.substr(bruh_2);
+        moment = moment.replaceAll(/BTC/g, "ETH");
+        bruh_2 = bruh.substr(0, bruh_2) + moment;
+        document.body.innerHTML = bruh_2;
+        $(".accordion-item button").click(function () {
+          const isToggle = $(this).attr("aria-expanded");
+          $(".accordion-item button").each((index, element) => {
+            $(element).attr("aria-expanded", false);
+          });
+          if (isToggle == "false") $(this).attr("aria-expanded", true);
+        });
+        document.getElementById("hider").onclick = function () {
+          var el = document.getElementById("chat_cont");
+          el.style.display === "flex"
+            ? (el.style.display = "none")
+            : (el.style.display = "flex");
+        };
+        document.getElementById("hider-2").onclick = function () {
+          var el = document.getElementById("chat_cont");
+          el.style.display === "flex"
+            ? (el.style.display = "none")
+            : (el.style.display = "flex");
+        };
+        valute = "ETH";
+      }
+      function nill_kiggers() {
+        let bruh = document.body.innerHTML;
+        let bruh_2 = bruh.indexOf("Participate");
+        let moment = bruh.substr(bruh_2);
+        moment = moment.replaceAll(/ETH/g, "2ETH2").replaceAll(/2ETH2/g, "BTC");
+        bruh_2 = bruh.substr(0, bruh_2) + moment;
+        document.body.innerHTML = bruh_2;
+        $(".accordion-item button").click(function () {
+          const isToggle = $(this).attr("aria-expanded");
+          $(".accordion-item button").each((index, element) => {
+            $(element).attr("aria-expanded", false);
+          });
+          if (isToggle == "false") $(this).attr("aria-expanded", true);
+        });
+        document.getElementById("hider").onclick = function () {
+          var el = document.getElementById("chat_cont");
+          el.style.display === "flex"
+            ? (el.style.display = "none")
+            : (el.style.display = "flex");
+        };
+        document.getElementById("hider-2").onclick = function () {
+          var el = document.getElementById("chat_cont");
+          el.style.display === "flex"
+            ? (el.style.display = "none")
+            : (el.style.display = "flex");
+        };
+        valute = "BTC";
+      }
+    </script> -->
+    <script>
+      document.getElementById("hider").onclick = function () {
+        var el = document.getElementById("chat_cont");
+        el.style.display === "flex"
+          ? (el.style.display = "none")
+          : (el.style.display = "flex");
+      };
+      document.getElementById("hider-2").onclick = function () {
+        var el = document.getElementById("chat_cont");
+        el.style.display === "flex"
+          ? (el.style.display = "none")
+          : (el.style.display = "flex");
+      };
+    </script>
+  </body>
+</html>
