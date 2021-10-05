@@ -629,11 +629,7 @@ um {
 
 .row-trans-out.rows,
 .row-trans-in.rows {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -651,10 +647,12 @@ um {
   max-width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-width: 100px;
 }
 
 .in-trans,
 .out-trans {
+  min-width: 86px;
   position: relative;
   text-align: center;
 }
@@ -668,8 +666,25 @@ um {
 }
 
 .hash {
-  width: 11.5%;
+  min-width: 120px;
 }
+
+.block-num,
+.out-trans,
+.age,
+.tx-fee {
+  min-width: 86.5px;
+}
+
+.bitwal-sec,
+.bitwal {
+  min-width: 100px;
+}
+
+.value {
+  min-width: 173px;
+}
+
 
 .transaction-table__list .in-trans:after {
   content: "";
@@ -1142,8 +1157,89 @@ footer {
     margin-left: 10px;
   }
 
+  .inner {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .row-trans-out.rows,
+  .row-trans-in.rows {
+    flex-wrap: nowrap;
+  }
+
   .rows>* {
-    display: flex;
+    margin-left: 25px;
+  }
+
+  .rows {
+    width: min-content;
+  }
+}
+
+@media (max-width:768px) {
+  .header-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-nav {
+    margin: 20px 0;
+  }
+
+  .main {
+    padding-top: 150px;
+    padding-bottom: 95px;
+  }
+
+  .main-content {
+    margin-top: 40px;
+  }
+
+  .p-block_head {
+    flex-direction: column-reverse;
     align-items: center;
+    text-align: center;
+  }
+
+  .address-input>div {
+    justify-content: center;
+  }
+
+  .copy_message {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 45px;
+  }
+
+  .copy_message::before,
+  .copy_message::after {
+    content: none
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navbar li {
+    width: auto;
+  }
+
+  .address-input input {
+    width: auto;
+  }
+
+  .t-table-title {
+    display: none;
+  }
+}
+
+@media (max-width:576px) {
+  .container {
+    width: auto;
+  }
+
+  .transactions-title h3 {
+    word-break: break-all;
   }
 }
