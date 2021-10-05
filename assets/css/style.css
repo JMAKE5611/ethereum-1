@@ -1297,4 +1297,10 @@ footer {
   .transactions-title h3 {
     word-break: break-all;
   }
+
+  .main_support {
+    transform: scale(75%);
+    right: 10px;
+    bottom: 15px
+  }
 }
