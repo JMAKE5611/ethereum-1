@@ -46,6 +46,7 @@ header {
 .header-img a {
   padding: 7px;
   padding-left: 0;
+  display: block;
 }
 
 .navbar {
@@ -120,7 +121,7 @@ header {
 
 .main {
   padding-top: 150px;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
   background: url(../images/main_bg.png);
   background-position: center;
   padding-bottom: 160px;
@@ -236,7 +237,7 @@ um {
 }
 
 .payment-block-content {
-  padding: 42px 54px 25px 54px;
+  padding: 37px 49px 20px 49px;
 }
 
 .circle-block-content {
@@ -352,6 +353,10 @@ um {
 .copy_message::after {
   border-top: 10px solid #3861FB;
   bottom: 10px;
+}
+
+.payment-block {
+  margin-right: 18px;
 }
 
 .payment-block hr {
@@ -1079,4 +1084,66 @@ footer {
 .setting-input .chat_input #setting-input {
   padding: 12px 14px;
   width: 232px;
+}
+
+@media (max-width:1200px) {
+  .main-text {
+    width: 65%;
+  }
+
+  .b-block_content,
+  .a-block_content,
+  .r-block_content {
+    padding: 30px 35px;
+  }
+
+  .payment-content {
+    flex-direction: column;
+  }
+
+  .payment-content>* {
+    width: 100%;
+  }
+
+  .payment-block {
+    margin-right: 0;
+  }
+
+  .p-block_head {
+    justify-content: center;
+  }
+
+  .rules-content {
+    flex-direction: column;
+  }
+
+  .circle-block {
+    margin-top: 30px;
+  }
+
+  .bonus-blocks,
+  .rules-blocks {
+    text-align: center;
+    width: auto;
+    margin: 0;
+  }
+
+  .rules-blocks {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width:992px) {
+  .main-text {
+    width: 100%;
+  }
+
+  .p-block_img {
+    margin-left: 10px;
+  }
+
+  .rows>* {
+    display: flex;
+    align-items: center;
+  }
 }

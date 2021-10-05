@@ -10,7 +10,7 @@ setInterval(function () {
   let percent = (currentPoints / 100) * 1;
   currentPoints = currentPoints - percent;
   percent = (currentPoints / maxPoints) * 100;
-  if (currentPoints >= 100) {
+  if (currentPoints >= 500) {
     updatePercent(percent);
     $('#progress-ico-bar').html(`${Math.floor(currentPoints)} / ${maxPoints}`);
   }

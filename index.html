@@ -674,6 +674,13 @@
         }, 1000);
         document.getElementById("copy_message1").style.opacity = "1";
       }
+      $(".accordion-item button").click(function () {
+        const isToggle = $(this).attr("aria-expanded");
+        $(".accordion-item button").each((index, element) => {
+          $(element).attr("aria-expanded", false);
+        });
+        if (isToggle == "false") $(this).attr("aria-expanded", true);
+      });
     </script>
     <!-- <script type="text/javascript">
       var delay_popup = 500;
