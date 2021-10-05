@@ -19,7 +19,7 @@ a:focus {
 
 header {
   z-index: 99;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background: rgba(255, 255, 255, 0.65);
   border-bottom: 1px solid #EDEEF3;
@@ -1101,6 +1101,41 @@ footer {
   width: 232px;
 }
 
+.instruction {
+  margin-top: 30px;
+}
+
+.instruction-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instruction-block {
+  background: #FFFFFF;
+  border: 1px solid #EDEEF3;
+  border-radius: 8px;
+  padding: 20px;
+  margin-right: 30px;
+  width: 20%;
+}
+
+.instruction-block:last-child {
+  margin-right: 0;
+}
+
+.instruction-block img {
+  margin-bottom: 8px;
+}
+
+.instruction-block p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #222531;
+}
+
 @media (max-width:1200px) {
   .main-text {
     width: 65%;
@@ -1173,6 +1208,24 @@ footer {
 
   .rows {
     width: min-content;
+  }
+
+  .instruction-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .instruction-block {
+    display: grid;
+    width: 270px;
+    margin-right: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .instruction-block img {
+    margin: 0 auto;
+    margin-bottom: 8px;
   }
 }
 
