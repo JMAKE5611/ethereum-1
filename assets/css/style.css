@@ -727,6 +727,7 @@ footer {
   font-size: 20px;
   line-height: 27px;
   color: #3861FB;
+  width: 150px;
 }
 
 .circle-money__chanse {
@@ -741,6 +742,7 @@ footer {
   position: absolute;
   margin-top: -45px;
   max-width: 286px;
+  min-width: 270px;
 }
 
 /* 
