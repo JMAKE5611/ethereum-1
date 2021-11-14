@@ -6,7 +6,11 @@ html {
   font-size: 16px;
   width: 100%;
   scroll-behavior: smooth;
-  background: #FDFDFD;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FDFDFE 20.23%);
+}
+
+:root {
+  --main-color: #FFA409;
 }
 
 svg {
@@ -19,10 +23,10 @@ a:focus {
 
 header {
   z-index: 99;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  background: rgba(255, 255, 255, 0.65);
-  border-bottom: 1px solid #EDEEF3;
+  /* background: rgba(255, 255, 255, 0.65);
+  border-bottom: 1px solid #EDEEF3; */
   backdrop-filter: blur(32px);
 }
 
@@ -82,9 +86,23 @@ header {
 
 .join__button {
   border: none;
-  padding: 8px 24px;
-  background: #3861FB;
-  border-radius: 4px;
+  padding: 10px 30px;
+  background: #FFF6E7;
+  border-radius: 98px;
+}
+
+.main-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_join__button {
+  border: none;
+  padding: 14px 30px;
+  background: var(--main-color);
+  border-radius: 98px;
+  margin-right: 15px;
 }
 
 .header-buttons {
@@ -92,14 +110,37 @@ header {
   align-items: center;
 }
 
+.main-buttons p {
+  margin-left: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.0015em;
+  color: #182C43;
+
+}
+
 .join__button a {
   display: flex;
   align-items: center;
   font-family: 'Manrope',
     sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+  color: #FFA409;
+  text-decoration: none;
+}
+
+.main_join__button a {
+  display: flex;
+  align-items: center;
+  font-family: 'Manrope',
+    sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -120,9 +161,9 @@ header {
 }
 
 .main {
-  padding-top: 150px;
+  padding-top: 230px;
   /* margin-bottom: 150px; */
-  background: url(../images/main_bg.png);
+  background: url(../images/main_bg.png) no-repeat;
   background-position: center;
   padding-bottom: 160px;
 }
@@ -134,7 +175,7 @@ header {
 }
 
 .main-text {
-  width: 52%;
+  width: 75%;
 }
 
 .main-text h1 {
@@ -146,6 +187,8 @@ header {
 }
 
 .main-text h3 {
+  margin: 0 auto;
+  width: 70%;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -178,12 +221,11 @@ um {
 
 .bonus-blocks,
 .about-block,
-.rule-block,
 .payment-block,
 .circle-block {
   background: #FFFFFF;
-  border: 1.21053px solid #EDEEF3;
-  border-radius: 8px;
+  box-shadow: 0px 64px 64px rgba(24, 32, 61, 0.05);
+  border-radius: 32px;
 }
 
 .about-block {
@@ -226,8 +268,7 @@ um {
   list-style: inside url(../images/check.svg);
 }
 
-.a-block_content,
-.r-block_content {
+.a-block_content {
   padding: 43px 48px;
 }
 
@@ -302,7 +343,7 @@ um {
 
 .button-copy p {
   font-family: Manrope;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -377,7 +418,7 @@ um {
 .waiting p {
   margin-left: 6px;
   font-family: Manrope;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -723,7 +764,7 @@ footer {
 
 .circle-money__sum {
   margin-top: 69px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
   line-height: 27px;
   color: #3861FB;
@@ -886,6 +927,11 @@ footer {
   padding: 14px 30px;
 }
 
+.chat_cont_footer .chat_enter__button,
+.chat_cont_footer #sms_input {
+  border-radius: 49px;
+}
+
 .support_info {
   display: flex;
   align-items: center;
@@ -910,7 +956,8 @@ footer {
 }
 
 .chat_input input {
-  padding: 12px 77px 12px 14px;
+  width: 115%;
+  padding: 12px 14px 12px 14px;
   background: #FBFCFE;
   border: 1px solid #EDEEF3;
   border-radius: 2px;
@@ -920,7 +967,6 @@ footer {
   font-size: 14px;
   line-height: 24px;
   color: rgba(34, 37, 49, 0.5);
-
 }
 
 .chat_enter {
@@ -930,7 +976,7 @@ footer {
 .chat_enter__button {
   padding: 14px 16px;
   border: none;
-  background: #3861FB;
+  background: var(--main-color);
   border-radius: 2px;
 }
 
@@ -988,11 +1034,11 @@ footer {
 }
 
 .chats_action_content {
-  width: 900px;
+  width: 1000px;
   display: flex;
   flex-direction: column;
   background: #F5F5F9;
-  padding: 50px;
+  padding: 70px 100px;
 }
 
 .a_chat_footer {
@@ -1050,7 +1096,7 @@ footer {
   color: #fff;
   font-family: Manrope;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
